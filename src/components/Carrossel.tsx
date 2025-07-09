@@ -13,7 +13,10 @@ function Carousel({ images, reverse = false }: CarouselProps) {
   const [loadedImages, setLoadedImages] = useState(0);
 
   useEffect(() => {
-    if (loadedImages < images.length * 2) return;
+    if (loadedImages < images.length * 2) {
+  console.log("Imagens carregadas:", loadedImages);
+  return;
+}
 
     const carousel = carouselRef.current;
     if (!carousel) return;
@@ -44,7 +47,7 @@ function Carousel({ images, reverse = false }: CarouselProps) {
   }, [reverse, loadedImages, images]);
 
   return (
-    <div className="w-full overflow-hidden bg-[#faf0e8] py-4">
+    <div className="w-full overflow-hidden py-4">
       <div
         ref={carouselRef}
         className="flex gap-4 overflow-x-hidden no-scrollbar whitespace-nowrap"
@@ -54,10 +57,11 @@ function Carousel({ images, reverse = false }: CarouselProps) {
             <Image
               src={src}
               alt={`Imagem ${index}`}
-              width={300}
-              height={300}
+              width={200}
+              height={200}
               className="rounded-lg object-cover"
               onLoad={() => setLoadedImages((prev) => prev + 1)}
+               onError={() => console.error("Erro ao carregar imagem:", src)}
             />
           </div>
         ))}
@@ -75,9 +79,11 @@ export default function CarrosselDuplo() {
   ];
 
   return (
-    <div>
-      <Carousel images={imagesTop} reverse={false} />
-      <Carousel images={imagesBottom} reverse={true} />
-    </div>
+  <div className="bg-[#faf0e8]">
+  <Carousel images={imagesTop} reverse={false} />
+  <div className="mb-20">
+    <Carousel images={imagesBottom} reverse={true} />
+  </div>
+</div>
   );
 }
