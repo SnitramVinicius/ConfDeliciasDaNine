@@ -193,10 +193,10 @@ export default function Home() {
         </footer>
       </div>
 
-      {/* Modal do Cardápio */}
+    
       {mostrarCardapio && (
-        <div className="fixed inset-0 backdrop-blur-md flex items-center justify-center z-50 bg-black bg-opacity-20">
-          <div className="bg-white rounded-xl p-8 max-w-3xl w-full max-h-[80vh] overflow-y-auto relative shadow-lg">
+        <div className="fixed inset-0 backdrop-blur-md flex items-center justify-center z-50  bg-opacity-30">
+          <div className="bg-white rounded-xl p-8 max-w-3xl w-full max-h-[80vh] overflow-y-auto relative shadow-lg no-scrollbar">
             <button
               onClick={() => setMostrarCardapio(false)}
               className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl font-bold"
