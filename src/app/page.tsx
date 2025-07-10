@@ -7,15 +7,16 @@ import { MdEmail, MdLocationOn } from "react-icons/md";
 import { useState, useEffect } from "react";
 import Cardapio from "@/components/cardapio";
 import CarrosselDuplo from "@/components/Carrossel";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   const [mostrarCardapio, setMostrarCardapio] = useState(false);
 
   useEffect(() => {
     if (mostrarCardapio) {
-      document.body.style.overflow = "hidden"; // bloqueia scroll da página
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = ""; // libera scroll
+      document.body.style.overflow = "";
     }
     return () => {
       document.body.style.overflow = "";
@@ -24,7 +25,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Container principal - aplica blur e bloqueia interação se modal aberto */}
+    <ScrollToTopButton />
       <div
         className={
           mostrarCardapio ? "blur-sm pointer-events-none select-none" : ""
@@ -53,7 +54,7 @@ export default function Home() {
           </div>
         </main>
 
-        <section className="min-h-screen bg-[#faf0e8] flex items-center justify-center">
+        <section id="sobre" className="min-h-screen bg-[#faf0e8] flex items-center justify-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-4 max-w-6xl w-full">
             <div className="p-8 max-w-lg w-full">
               <h1 className="text-3xl font-bold text-[#7a5641] mb-4">
@@ -71,48 +72,55 @@ export default function Home() {
 
             <div className="max-w-sm w-full">
               <img
-                src="/perfil.jpg"
+                src="/perfil1.jpg"
                 alt="Imagem de doces"
-                className="w-full h-auto"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
           </div>
         </section>
 
-        {/* Seção Produtos Destaques */}
-        <section className="bg-[#faf0e8] py-20 px-4">
+        <section id="informacoes" className="bg-[#faf0e8] py-20 px-4">
           <div className="flex flex-col items-center max-w-6xl mx-auto">
             <div className="mb-10">
               <h1 className="text-4xl text-[#7a5641] font-semibold">
                 Produtos Destaques
               </h1>
             </div>
-            <div className="flex flex-col md:flex-row gap-10 justify-center mb-10 w-full">
+            <div className="flex flex-col md:flex-row gap-10 justify-center mb-20 w-full">
+                <div className="flex flex-col items-center text-center flex-1">
+                <img
+                  src="/IMG-20250708-WA0054.jpg"
+                  alt="Bolo"
+                  className="w-60 h-60 object-cover mb-4 rounded-2xl shadow-md"
+                />
+                <h2 className="text-2xl text-[#7a5641] font-medium">Bolo de Aniversário</h2>
+              </div>
               <div className="flex flex-col items-center text-center flex-1">
                 <img
-                  src="/img1.jpg"
+                  src="/bolo11.jpg"
                   alt="Bolo"
-                  className="w-60 h-auto mb-4 rounded-2xl shadow-md"
+                  className="w-60 h-60 object-cover mb-4  rounded-2xl shadow-md"
                 />
-                <h2 className="text-2xl text-[#7a5641] font-medium">Bolos</h2>
+                <h2 className="text-2xl text-[#7a5641] font-medium">Bolo Vulcão</h2>
               </div>
               <div className="flex flex-col items-center text-center flex-1">
                 <img
                   src="/doces.jpg"
                   alt="Brigadeiros"
-                  className="w-60 h-auto mb-4 rounded-2xl shadow-md"
+                  className="w-60 h-60 object-cover mb-4 rounded-2xl shadow-md"
                 />
                 <h2 className="text-2xl text-[#7a5641] font-medium">
-                  Brigadeiros
+                  Cento de Doces
                 </h2>
               </div>
               <div className="flex flex-col items-center text-center flex-1">
                 <img
-                  src="/coxinha1.jpg"
+                  src="/bolo7.jpg"
                   alt="Bombom"
-                  className="w-60 h-auto mb-4 rounded-2xl shadow-md"
+                  className="w-60 h-60 object-cover mb-4 rounded-2xl shadow-md"
                 />
-                <h2 className="text-2xl text-[#7a5641] font-medium">Bombom</h2>
+                <h2 className="text-2xl text-[#7a5641] font-medium">Coxinha de Morango</h2>
               </div>
             </div>
 
@@ -125,12 +133,14 @@ export default function Home() {
             </button>
           </div>
         </section>
-
-        <TestimonialSlider />
+<div id="clientes"><TestimonialSlider /></div>
+        
+        <div id="servicos">
        <CarrosselDuplo />
+       </div>
 
         <section className="bg-[#faf0e8] flex flex-col items-center">
-          <h1 className="text-4xl text-[#7a5641] mb-8">
+          <h1 className="text-4xl text-[#7a5641] mb-20">
             Encomende seu doce preferido para qualquer ocasião!
           </h1>
           <button className="bg-[#ffe7e7] hover:bg-[#f16789] text-[#f16789] hover:text-white px-6 py-3 rounded-2xl text-lg font-semibold shadow-lg transition cursor-pointer mb-20">
@@ -159,13 +169,6 @@ export default function Home() {
                 @DeliciasdaNine
               </a>
 
-              <a
-                href="mailto:seuemail@exemplo.com"
-                className="flex items-center gap-2 text-pink-600 transition"
-              >
-                <MdEmail size={24} />
-                seuemail@exemplo.com
-              </a>
 
               <a
                 href="https://wa.me/5599999999999"
@@ -185,10 +188,9 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="md:w-full h-full bg-[#faf0e8] text-[#411417] text-center">
+        <footer className="md:w-full h-full bg-[#faf0e8] text-black text-center">
           <p className="text-[7px] sm:text-[10px] ">
-            &copy; 2025. Todos os Direitos Reservados. Ana Claudia Martins
-            Advogada. Desenvolvido por Vinicius Martins
+            &copy; 2025. Todos os Direitos Reservados. Delícias da Nine. Desenvolvido por Vinicius Martins
           </p>
         </footer>
       </div>

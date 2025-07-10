@@ -32,11 +32,11 @@ export default function Navbar() {
 
             {/* Menu Desktop */}
             <div className="hidden md:flex items-center space-x-10">
-              <a href="#" className="text-white hover:text-[#7a5641]">Home</a>
-              <a href="#sobre" className="text-white hover:text-[#7a5641]">Sobre</a>
-              <a href="#informacoes" className="text-white hover:text-[#7a5641]">Informações</a>
-              <a href="#servicos" className="text-white hover:text-[#7a5641]">Serviços</a>
-              <a href="#contato" className="text-white hover:text-[#7a5641]">Contato</a>
+              <a href="#sobre" className="text-white hover:text-[#f16789]">Sobre</a>
+              <a href="#informacoes" className="text-white hover:text-[#f16789]">Informações</a>
+              <a href="#clientes" className="text-white hover:text-[#f16789]">Clientes</a>
+              <a href="#servicos" className="text-white hover:text-[#f16789]">Serviços</a>
+              <a href="#contato" className="text-white hover:text-[#f16789]">Contato</a>
             </div>
 
             {/* Botão Menu Mobile */}
@@ -58,6 +58,7 @@ export default function Navbar() {
           <a href="#" onClick={() => setMenuOpen(false)} className="hover:text-[#7a5641]">Home</a>
           <a href="#sobre" onClick={() => setMenuOpen(false)} className="hover:text-[#7a5641]">Sobre</a>
           <a href="#informacoes" onClick={() => setMenuOpen(false)} className="hover:text-[#7a5641]">Informações</a>
+          <a href="#clientes" onClick={() => setMenuOpen(false)} className="hover:text-[#7a5641]">Clientes</a>
           <a href="#servicos" onClick={() => setMenuOpen(false)} className="hover:text-[#7a5641]">Serviços</a>
           <a href="#contato" onClick={() => setMenuOpen(false)} className="hover:text-[#7a5641]">Contato</a>
         </div>

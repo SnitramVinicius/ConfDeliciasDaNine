@@ -43,7 +43,7 @@ function Carousel({ images, reverse = false }: CarouselProps) {
       >
         {[...images, ...images].map((src, index) => (
           <div key={index} className="min-w-[200px] flex-shrink-0">
-            <Image
+            <img
               src={src}
               alt={`Imagem ${index}`}
               width={200}
@@ -60,9 +60,8 @@ function Carousel({ images, reverse = false }: CarouselProps) {
 
 export default function CarrosselDuplo() {
   const imagesTop = [
-    "/bolo.jpg", "/bolo1.jpg", "/bolo2.jpg", "/bolo3.jpg", "/bolo4.jpg",
-    "/bolo5.jpg", "/bolo6.jpg", "/bolo7.jpg", "/bolo8.jpg", "/bolo9.jpg",
-    "/bolo10.jpg", "/bolo11.jpg", "/bolo12.jpg", "/bolo13.jpg", "/bolo14.jpg", "/bolo15.jpg",
+    "/bolo.jpg", "/bolo1.jpg", "/bolo2.jpg", "/bolo3.jpg",
+    "/bolo5.jpg", "/bolo7.jpg", "/bolo8.jpg", "/bolo9.jpg", "/bolo11.jpg", "/bolo12.jpg", "/bolo13.jpg", "/bolo14.jpg", "/bolo15.jpg",
   ];
 
   const imagesBottom = [
