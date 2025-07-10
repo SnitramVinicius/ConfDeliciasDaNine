@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 type CarouselProps = {
@@ -10,7 +10,6 @@ type CarouselProps = {
 
 function Carousel({ images, reverse = false }: CarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null);
-  const [loadedImages, setLoadedImages] = useState(0);
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -34,7 +33,7 @@ function Carousel({ images, reverse = false }: CarouselProps) {
     }, 16); // ~60fps
 
     return () => clearInterval(intervalId);
-  }, [reverse, images.length]); // ✅ Corrigido aqui
+  }, [reverse, images.length]);
 
   return (
     <div className="w-full overflow-hidden py-4 min-h-[220px] bg-[#faf0e8]">
@@ -50,7 +49,6 @@ function Carousel({ images, reverse = false }: CarouselProps) {
               width={200}
               height={200}
               className="rounded-lg object-cover"
-              onLoad={() => setLoadedImages((prev) => prev + 1)}
               onError={() => console.error("Erro ao carregar imagem:", src)}
             />
           </div>
