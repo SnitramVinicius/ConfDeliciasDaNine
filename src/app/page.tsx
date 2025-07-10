@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { MdEmail, MdLocationOn } from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
 import { useState, useEffect } from "react";
 import Cardapio from "@/components/cardapio";
 import CarrosselDuplo from "@/components/Carrossel";
