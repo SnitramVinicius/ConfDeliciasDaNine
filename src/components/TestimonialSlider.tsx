@@ -48,7 +48,7 @@ export default function TestimonialSlider() {
   return (
     <section className="bg-[#faf0e8] py-10 pb-40">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl text-[#7a5641] text-center mb-10">
+        <h1 className="text-4xl text-[#7a5641] font-bold text-center mb-10">
           Depoimentos de Clientes
         </h1>
 

@@ -8,6 +8,8 @@ import { useState, useEffect } from "react";
 import Cardapio from "@/components/cardapio";
 import CarrosselDuplo from "@/components/Carrossel";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import Preloader from "@/components/Preloader";
+
 
 export default function Home() {
   const [mostrarCardapio, setMostrarCardapio] = useState(false);
@@ -25,6 +27,7 @@ export default function Home() {
 
   return (
     <>
+    <Preloader />
     <ScrollToTopButton />
       <div
         className={
@@ -44,7 +47,7 @@ export default function Home() {
             Seu navegador não suporta vídeo.
           </video>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
+            <h1 className="text- text-3xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
               O sabor que encanta — feito com carinho,
               <br /> entregue com amor.
             </h1>
@@ -61,12 +64,9 @@ export default function Home() {
                 Sobre nós
               </h1>
               <p className="text-[#7a5641] leading-relaxed">
-                Na <strong>Delícias da Nine</strong>, cada doce é feito com
-                amor, cuidado e aquele toque especial de casa. Trabalhamos com
-                receitas artesanais, ingredientes selecionados e uma paixão
-                verdadeira por encantar paladares. Seja para uma comemoração ou
-                para adoçar o seu dia, conte com a gente para criar momentos
-                inesquecíveis!
+             A <strong>Delícias da Nine</strong> nasceu em 21 de fevereiro de 2021, inspirada pelo amor pela confeitaria e pelo desejo de levar doçura aos momentos mais especiais. Desde o início, cada receita é feita com carinho, cuidado e aquele toque especial de casa que conquista corações.
+Com cursos na área de confeitaria e docinhos, fui aprendendo, testando e aperfeiçoando cada detalhe para oferecer produtos artesanais, preparados com ingredientes selecionados e uma boa dose de paixão.
+Mais do que doces, entregamos experiências, seja para uma comemoração, um presente ou para tornar o seu dia mais gostoso. Aqui, cada pedido é feito com dedicação e pensado para criar memórias inesquecíveis.
               </p>
             </div>
 
@@ -83,7 +83,7 @@ export default function Home() {
         <section id="informacoes" className="bg-[#faf0e8] py-20 px-4">
           <div className="flex flex-col items-center max-w-6xl mx-auto">
             <div className="mb-10">
-              <h1 className="text-4xl text-[#7a5641] font-semibold">
+              <h1 className="text-4xl text-[#7a5641] font-bold text-center mb-10">
                 Produtos Destaques
               </h1>
             </div>
@@ -141,12 +141,17 @@ export default function Home() {
        </div>
 
         <section className="bg-[#faf0e8] flex flex-col items-center">
-          <h1 className="text-4xl text-[#7a5641] mb-20">
+          <h1 className="text-4xl text-[#7a5641] mb-20 font-bold">
             Encomende seu doce preferido para qualquer ocasião!
           </h1>
-          <button className="bg-[#ffe7e7] hover:bg-[#f16789] text-[#f16789] hover:text-white px-6 py-3 rounded-2xl text-lg font-semibold shadow-lg transition cursor-pointer mb-20">
-            Fazer pedido via Whatsapp
-          </button>
+          <a
+  href="https://api.whatsapp.com/send?phone=5567991347729"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#ffe7e7] hover:bg-[#f16789] text-[#f16789] hover:text-white px-6 py-3 rounded-2xl text-lg font-semibold shadow-lg transition cursor-pointer mb-20 inline-block text-center"
+>
+  Fazer pedido via Whatsapp
+</a>
         </section>
 
         <section
@@ -172,13 +177,13 @@ export default function Home() {
 
 
               <a
-                href="https://wa.me/5599999999999"
+                href="https://api.whatsapp.com/send?phone=5567991015654&text=Olá,%20gostaria%20de%20fazer%uma%encomenda%."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-pink-600 transition"
               >
                 <FaWhatsapp size={24} />
-                (99) 99999-9999
+                (67) 99101-5654
               </a>
 
               <div className="flex items-center gap-2 text-pink-600">

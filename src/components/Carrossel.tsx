@@ -30,7 +30,7 @@ function Carousel({ images, reverse = false }: CarouselProps) {
       if (reverse && carousel.scrollLeft <= 0) {
         carousel.scrollLeft = halfway;
       }
-    }, 16); // ~60fps
+    }, 16); 
 
     return () => clearInterval(intervalId);
   }, [reverse, images.length]);

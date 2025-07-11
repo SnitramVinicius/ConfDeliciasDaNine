@@ -80,9 +80,14 @@ export default function Cardapio() {
           <p className="text-sm">Pó de decoração R$ 15,00 por kg</p>
         </div>
       </div>
-      <button className="bg-[#ffe7e7] hover:bg-[#f16789] text-[#f16789] hover:text-white px-6 py-3 rounded-2xl text-lg font-semibold shadow-lg transition cursor-pointer mb-20">
-            Fazer pedido via Whatsapp
-          </button>
+      <a
+  href="https://api.whatsapp.com/send?phone=5567991347729"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#ffe7e7] hover:bg-[#f16789] text-[#f16789] hover:text-white px-6 py-3 rounded-2xl text-lg font-semibold shadow-lg transition cursor-pointer mb-20 inline-block text-center"
+>
+  Fazer pedido via Whatsapp
+</a>
     </div>
     </div>
   );
