@@ -94,6 +94,7 @@ export default function Home() {
                   alt="Bolo"
                   className="w-60 h-60 object-cover mb-4 rounded-2xl shadow-md"
                 />
+                
                 <h2 className="text-2xl text-[#7a5641] font-medium">Bolo de Aniversário</h2>
               </div>
               <div className="flex flex-col items-center text-center flex-1">
