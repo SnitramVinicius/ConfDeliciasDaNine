@@ -43,7 +43,7 @@ function Carousel({ images, reverse = false }: CarouselProps) {
       >
         {[...images, ...images].map((src, index) => (
           <div key={index} className="min-w-[200px] flex-shrink-0">
-            <img
+            <Image
               src={src}
               alt={`Imagem ${index}`}
               width={200}
