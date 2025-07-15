@@ -59,16 +59,8 @@ function Carousel({ images, reverse = false }: CarouselProps) {
 }
 
 export default function CarrosselDuplo() {
-  const imagesTop = [
-    "/bolo.jpg", "/bolo1.jpg", "/bolo2.jpg", "/bolo3.jpg",
-    "/bolo5.jpg", "/bolo7.jpg", "/bolo8.jpg", "/bolo9.jpg", "/bolo11.jpg", "/bolo12.jpg", "/bolo13.jpg", "/bolo14.jpg", "/bolo15.jpg",
-  ];
-
-  const imagesBottom = [
-    "/bolo16.jpg", "/bolo17.jpg", "/bolo18.jpg", "/bolo19.jpg", "/bolo20.jpg",
-    "/bolo21.jpg", "/bolo22.jpg", "/bolo23.jpg", "/bolo24.jpg", "/bolo25.jpg",
-    "/bolo26.jpg", "/bolo27.jpg", "/bolo28.jpg", "/bolo29.jpg", "/bolo30.jpg"
-  ];
+  const imagesTop = Array.from({ length: 50 }, (_, i) => `/${i + 1}.jpg`);
+  const imagesBottom = Array.from({ length: 51 }, (_, i) => `/${i + 51}.jpg`);
 
   return (
     <div className="bg-[#faf0e8]">

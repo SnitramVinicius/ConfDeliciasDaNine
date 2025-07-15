@@ -10,37 +10,37 @@ const testimonials = [
     name: "Maria F.",
     text: "Os bolos da Nane são incríveis! Saborosos e feitos com muito carinho.",
     stars: 5,
-    img: "/perfil.jpg",
+    img: "/icons8-usuário-mulher-com-círculo-48.png",
   },
   {
     name: "Pedro S.",
     text: "Sempre peço para festas. Todo mundo elogia!",
     stars: 5,
-    img: "/perfil.jpg",
+    img: "/icons8-usuário-mulher-com-círculo-48.png",
   },
   {
     name: "Hesdiha",
     text: "Doces que abraçam o coração! Atendimento impecável.",
     stars: 5,
-    img: "/perfil.jpg",
+    img: "/icons8-usuário-mulher-com-círculo-48.png",
   },
   {
     name: "Katlyn R.",
     text: "Tudo feito com muito capricho! Uma delícia!",
     stars: 5,
-    img: "/perfil.jpg",
+    img: "/icons8-usuário-mulher-com-círculo-48.png",
   },
   {
     name: "Beatriz S.",
     text: "Não troco por nenhuma outra confeitaria. Atendimento 10/10!",
     stars: 5,
-    img: "/perfil.jpg",
+    img: "/icons8-usuário-mulher-com-círculo-48.png",
   },
   {
     name: "Camilla M.",
     text: "Os melhores bolos da região! Tudo sempre fresquinho.",
     stars: 5,
-    img: "/perfil.jpg",
+    img: "/icons8-usuário-mulher-com-círculo-48.png",
   },
 ];
 

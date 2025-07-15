@@ -90,7 +90,7 @@ Mais do que doces, entregamos experiências, seja para uma comemoração, um pre
             <div className="flex flex-col md:flex-row gap-10 justify-center mb-20 w-full">
                 <div className="flex flex-col items-center text-center flex-1">
                 <img
-                  src="/IMG-20250708-WA0054.jpg"
+                  src="/9.jpg"
                   alt="Bolo"
                   className="w-60 h-60 object-cover mb-4 rounded-2xl shadow-md"
                 />
@@ -99,7 +99,7 @@ Mais do que doces, entregamos experiências, seja para uma comemoração, um pre
               </div>
               <div className="flex flex-col items-center text-center flex-1">
                 <img
-                  src="/bolo11.jpg"
+                  src="/bolovulcao.jpg"
                   alt="Bolo"
                   className="w-60 h-60 object-cover mb-4  rounded-2xl shadow-md"
                 />
@@ -117,11 +117,11 @@ Mais do que doces, entregamos experiências, seja para uma comemoração, um pre
               </div>
               <div className="flex flex-col items-center text-center flex-1">
                 <img
-                  src="/bolo7.jpg"
+                  src="/bolovitrine1.jpg"
                   alt="Bombom"
                   className="w-60 h-60 object-cover mb-4 rounded-2xl shadow-md"
                 />
-                <h2 className="text-2xl text-[#7a5641] font-medium">Coxinha de Morango</h2>
+                <h2 className="text-2xl text-[#7a5641] font-medium">Bolo Vitrine</h2>
               </div>
             </div>
 
