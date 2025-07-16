@@ -155,7 +155,7 @@ export default function Cardapio() {
           </div>
         </div>
         <a
-          href="https://api.whatsapp.com/send?phone=5567991347729"
+          href="https://api.whatsapp.com/send?phone=67991015654"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#ffe7e7] hover:bg-[#f16789] text-[#f16789] hover:text-white px-6 py-3 rounded-2xl text-lg font-semibold shadow-lg transition cursor-pointer mb-5 inline-block text-center"
