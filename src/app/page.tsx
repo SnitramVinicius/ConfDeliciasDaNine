@@ -10,50 +10,51 @@ import CarrosselDuplo from "@/components/Carrossel";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Preloader from "@/components/Preloader";
 
-
 export default function Home() {
-
   const [mostrarCardapio, setMostrarCardapio] = useState(false);
 
   useEffect(() => {
-  
-  const sr = require("scrollreveal").default;
+    // Importa ScrollReveal de forma segura após o carregamento do cliente
+    import("scrollreveal").then((ScrollReveal) => {
+      const sr = ScrollReveal.default();
 
-  sr().reveal(".reveal-top", {
-    origin: "top",
-    distance: "40px",
-    duration: 1000,
-    delay: 100,
-    easing: "ease-in-out",
-    reset: false,
-  });
+      sr.reveal(".reveal-top", {
+        origin: "top",
+        distance: "40px",
+        duration: 1000,
+        delay: 100,
+        easing: "ease-in-out",
+        reset: false,
+      });
 
-  sr().reveal(".reveal-bottom", {
-    origin: "bottom",
-    distance: "40px",
-    duration: 1000,
-    delay: 200,
-    easing: "ease-in-out",
-    reset: false,
-  });
+      sr.reveal(".reveal-bottom", {
+        origin: "bottom",
+        distance: "40px",
+        duration: 1000,
+        delay: 200,
+        easing: "ease-in-out",
+        reset: false,
+      });
 
-  sr().reveal(".reveal-left", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 300,
-    easing: "ease-in-out",
-    reset: false,
-  });
+      sr.reveal(".reveal-left", {
+        origin: "left",
+        distance: "60px",
+        duration: 1000,
+        delay: 300,
+        easing: "ease-in-out",
+        reset: false,
+      });
 
-  sr().reveal(".reveal-right", {
-    origin: "right",
-    distance: "60px",
-    duration: 1000,
-    delay: 400,
-    easing: "ease-in-out",
-    reset: false,
-  });
+      sr.reveal(".reveal-right", {
+        origin: "right",
+        distance: "60px",
+        duration: 1000,
+        delay: 400,
+        easing: "ease-in-out",
+        reset: false,
+      });
+    });
+
 
     if (mostrarCardapio) {
       document.body.style.overflow = "hidden";

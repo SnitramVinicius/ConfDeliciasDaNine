@@ -12,44 +12,46 @@ function Carousel({ images, reverse = false }: CarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-const sr = require("scrollreveal").default;
+    // Importa ScrollReveal somente no client
+    if (typeof window !== "undefined") {
+      import("scrollreveal").then(({ default: ScrollReveal }) => {
+        ScrollReveal().reveal(".reveal-top", {
+          origin: "top",
+          distance: "40px",
+          duration: 1000,
+          delay: 100,
+          easing: "ease-in-out",
+          reset: false,
+        });
 
-  sr().reveal(".reveal-top", {
-    origin: "top",
-    distance: "40px",
-    duration: 1000,
-    delay: 100,
-    easing: "ease-in-out",
-    reset: false,
-  });
+        ScrollReveal().reveal(".reveal-bottom", {
+          origin: "bottom",
+          distance: "40px",
+          duration: 1000,
+          delay: 200,
+          easing: "ease-in-out",
+          reset: false,
+        });
 
-  sr().reveal(".reveal-bottom", {
-    origin: "bottom",
-    distance: "40px",
-    duration: 1000,
-    delay: 200,
-    easing: "ease-in-out",
-    reset: false,
-  });
+        ScrollReveal().reveal(".reveal-left", {
+          origin: "left",
+          distance: "60px",
+          duration: 1000,
+          delay: 300,
+          easing: "ease-in-out",
+          reset: false,
+        });
 
-  sr().reveal(".reveal-left", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 300,
-    easing: "ease-in-out",
-    reset: false,
-  });
-
-  sr().reveal(".reveal-right", {
-    origin: "right",
-    distance: "60px",
-    duration: 1000,
-    delay: 400,
-    easing: "ease-in-out",
-    reset: false,
-  });
-
+        ScrollReveal().reveal(".reveal-right", {
+          origin: "right",
+          distance: "60px",
+          duration: 1000,
+          delay: 400,
+          easing: "ease-in-out",
+          reset: false,
+        });
+      });
+    }
 
     const carousel = carouselRef.current;
     if (!carousel) return;
@@ -69,7 +71,7 @@ const sr = require("scrollreveal").default;
       if (reverse && carousel.scrollLeft <= 0) {
         carousel.scrollLeft = halfway;
       }
-    }, 16); 
+    }, 16); // ~60fps
 
     return () => clearInterval(intervalId);
   }, [reverse, images.length]);
