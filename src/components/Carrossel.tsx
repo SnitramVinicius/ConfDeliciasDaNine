@@ -12,6 +12,45 @@ function Carousel({ images, reverse = false }: CarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+const sr = require("scrollreveal").default;
+
+  sr().reveal(".reveal-top", {
+    origin: "top",
+    distance: "40px",
+    duration: 1000,
+    delay: 100,
+    easing: "ease-in-out",
+    reset: false,
+  });
+
+  sr().reveal(".reveal-bottom", {
+    origin: "bottom",
+    distance: "40px",
+    duration: 1000,
+    delay: 200,
+    easing: "ease-in-out",
+    reset: false,
+  });
+
+  sr().reveal(".reveal-left", {
+    origin: "left",
+    distance: "60px",
+    duration: 1000,
+    delay: 300,
+    easing: "ease-in-out",
+    reset: false,
+  });
+
+  sr().reveal(".reveal-right", {
+    origin: "right",
+    distance: "60px",
+    duration: 1000,
+    delay: 400,
+    easing: "ease-in-out",
+    reset: false,
+  });
+
+
     const carousel = carouselRef.current;
     if (!carousel) return;
 
@@ -39,7 +78,7 @@ function Carousel({ images, reverse = false }: CarouselProps) {
     <div className="w-full overflow-hidden py-4 min-h-[220px] bg-[#faf0e8]">
       <div
         ref={carouselRef}
-        className="flex gap-4 overflow-x-hidden no-scrollbar whitespace-nowrap will-change-scroll"
+        className="flex gap-4 overflow-x-hidden no-scrollbar whitespace-nowrap will-change-scroll reveal-top"
       >
         {[...images, ...images].map((src, index) => (
           <div key={index} className="min-w-[200px] flex-shrink-0">
