@@ -17,15 +17,12 @@ export default function Cardapio() {
               />
               Bolo Vulcão
             </h1>
-            <p className="text-xl font mb-2">
-              Leite Ninho - <strong>R$70,00 kg</strong>
-            </p>
-            <p className="text-xl font mb-2">
-              Brigadeiro - <strong>R$70,00 kg</strong>
-            </p>
-            <p className="text-xl mb-2">
-              Duo (Leite ninho com brigadeiro) - <strong>R$70,00 kg</strong>
-            </p>
+            <p className="text-xl font mb-2">Leite Ninho</p>
+            <p className="text-xl font mb-2">Brigadeiro</p>
+            <p className="text-xl mb-2">Duo (Leite ninho com brigadeiro)</p>
+            <p className="text-xl mb-2"><strong>Valores:</strong></p>
+            <p className="text-xl mb-2">1kg <strong>R$52,00</strong></p>
+            <p className="text-xl mb-2">1,5kg <strong>R$80,00</strong></p>
           </div>
 
           <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md">
@@ -40,13 +37,54 @@ export default function Cardapio() {
               Bolo de Aniversário
             </h1>
             <p className="text-xl font mb-2">
-              Leite Ninho - <strong>R$70,00 kg</strong>
+              Abacaxi com Coco - <strong>R$ 75,00 kg</strong>
             </p>
             <p className="text-xl font mb-2">
-              Brigadeiro - <strong>R$70,00 kg</strong>
+              Beijinho - <strong>R$ 70,00 kg</strong>
             </p>
-            <p className="text-xl mb-2">
-              Duo (Leite ninho com brigadeiro) - <strong>R$70,00 kg</strong>
+            <p className="text-xl font mb-2">
+              Brigadeiro - <strong>R$ 70,00 kg</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              Leite Ninho - <strong>R$ 70,00 kg</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              Leite ninho com Abacaxi - <strong>R$ 73,00 kg</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              Leite ninho com Morango - <strong>R$ 85,00 kg</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              Leite ninho com Nutella - <strong>R$ 95,00 kg</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              4 Leites com pedaços de Chocolate - <strong>R$ 70,00 kg</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              4 Leites - <strong>R$ 70,00 kg</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              4 Leites com Abacaxi - <strong>R$ 73,00 kg</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              4 Leites com Morango - <strong>R$ 85,00 kg</strong>
+            </p>
+          </div>
+          <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md mb-2">
+            <p className="text-xl font-semibold mb-2 text-center">
+              Adicionais p/ bolos:
+            </p>
+            <p className="text-xl">
+              Glitter <strong>R$ 15,00</strong> por <strong>kg</strong>
+            </p>
+            <p className="text-xl">
+              Topper simples a partir <strong>R$ 20,00</strong>
+            </p>
+            <p className="text-xl">
+              Bolo retangular adicional de <strong>R$ 20,00</strong>
+            </p>
+            <p className="text-xl">
+              Pó de decoração <strong>R$ 15,00</strong> por <strong>kg</strong>
             </p>
           </div>
 
@@ -62,13 +100,13 @@ export default function Cardapio() {
               Cento de Doces
             </h1>
             <p className="text-xl font mb-2">
-              Leite Ninho - <strong>R$70,00 kg</strong>
+              Leite Ninho - <strong>R$ 145,00 kg</strong>
             </p>
             <p className="text-xl font mb-2">
-              Brigadeiro - <strong>R$70,00 kg</strong>
+              Brigadeiro - <strong>R$ 145,00 kg</strong>
             </p>
             <p className="text-xl mb-2">
-              Ferreiro Rocher - <strong>R$70,00 kg</strong>
+              Ferreiro Rocher - <strong>R$ 145,00 kg</strong>
             </p>
           </div>
 
@@ -83,7 +121,7 @@ export default function Cardapio() {
               />
               Bolo Vitrine
             </h1>
-            <p className="text-sm">R$70,00 kg</p>
+            <p className="text-xl font mb-2">R$ 80,00 kg</p>
           </div>
 
           <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md">
@@ -98,27 +136,27 @@ export default function Cardapio() {
               Bolo no Pote
             </h1>
             <p className="text-xl font mb-2">
-              Leite Ninho - <strong>R$70,00</strong>
+              Leite Ninho - <strong>R$ 10,00</strong>
             </p>
             <p className="text-xl font mb-2">
-              Brigadeiro - <strong>R$70,00</strong>
+              Brigadeiro - <strong>R$ 10,00</strong>
             </p>
             <p className="text-xl mb-2">
-              Ninho e brigadeiro - <strong>R$70,00</strong>
+              Ninho e brigadeiro - <strong>R$ 10,00</strong>
             </p>
             <p className="text-xl font mb-2">
-              Ninho e morango - <strong>R$70,00</strong>
+              Ninho e morango - <strong>R$ 10,00</strong>
             </p>
             <p className="text-xl font mb-2">
-              Ninho e beijinho - <strong>R$70,00</strong>
+              Ninho e beijinho - <strong>R$ 10,00</strong>
             </p>
             <p className="text-xl mb-2">
-              Abacaxi com coco - <strong>R$70,00 kg</strong>
+              Abacaxi com coco - <strong>R$ 10,00</strong>
             </p>
           </div>
 
           <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md">
-           <h1 className="text-xl font-semibold flex items-center justify-center gap-2 mb-5">
+            <h1 className="text-xl font-semibold flex items-center justify-center gap-2 mb-5">
               <Image
                 src="/icons8-morango-48.png"
                 alt="Ícone de Bolo"
@@ -128,10 +166,21 @@ export default function Cardapio() {
               />
               Coxinha de Morango
             </h1>
-            <p className="text-xl">R$73,00 Un</p>
+             <p className="text-xl font mb-2">
+              Beijinho  - <strong>R$ 10,00 un</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              Brigadeiro - <strong>R$ 10,00 un</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              Leite Ninho - <strong>R$ 10,00 un</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              Ferrero Rocher - <strong>R$ 10,00 un</strong>
+            </p>
           </div>
 
-          <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md">
+          <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md mb-15">
             <h1 className="text-xl font-semibold flex items-center justify-center gap-2 mb-5">
               <Image
                 src="/icons8-bolo-48.png"
@@ -142,16 +191,15 @@ export default function Cardapio() {
               />
               Copo da Felicidade
             </h1>
-            <p className="text-xl">R$73,00 Un</p>
-          </div>
-          <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md mb-15">
-            <p className="text-xl font-semibold mb-2 text-center">
-              Adicionais:
+            <p className="text-xl font mb-2">
+              Leite Ninho  - <strong>R$ 17,00 un</strong>
             </p>
-            <p className="text-xl">Glitter R$ 15,00 por kg de bolo</p>
-            <p className="text-xl">Topper simples a partir R$20,00</p>
-            <p className="text-xl">Bolo retangular R$20,00</p>
-            <p className="text-xl">Pó de decoração R$ 15,00 por kg de bolo</p>
+            <p className="text-xl font mb-2">
+              Leite Ninho com Brigadeiro - <strong>R$ 17,00 un</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              Brigadeiro - <strong>R$ 17,00 un</strong>
+            </p>
           </div>
         </div>
         <a

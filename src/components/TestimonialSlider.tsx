@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 const testimonials = [
   {
     name: "Maria F.",
-    text: "Os bolos da Nane são incríveis! Saborosos e feitos com muito carinho.",
+    text: "Simplesmente maravilhoso, bem molhado e super recheado, sabor incrível, com certeza comprarei de novo.",
     stars: 5,
     img: "/icons8-usuário-mulher-com-círculo-48.png",
   },
@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     name: "Hesdiha",
-    text: "Doces que abraçam o coração! Atendimento impecável.",
+    text: "Ficou lindo, maravilhoso. Amamos o bolo!",
     stars: 5,
     img: "/icons8-usuário-mulher-com-círculo-48.png",
   },
@@ -32,13 +32,13 @@ const testimonials = [
   },
   {
     name: "Beatriz S.",
-    text: "Não troco por nenhuma outra confeitaria. Atendimento 10/10!",
+    text: "Uma delícia de bolo. Parabens mais uma vez pela confeitaria.",
     stars: 5,
     img: "/icons8-usuário-mulher-com-círculo-48.png",
   },
   {
     name: "Camilla M.",
-    text: "Os melhores bolos da região! Tudo sempre fresquinho.",
+    text: "Todos os bolos que ja comprei com você, todos maravilhosos.",
     stars: 5,
     img: "/icons8-usuário-mulher-com-círculo-48.png",
   },

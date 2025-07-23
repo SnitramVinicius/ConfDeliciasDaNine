@@ -231,7 +231,7 @@ Mais do que doces, entregamos experiências, seja para uma comemoração, um pre
 
               <div className="flex items-center gap-2 text-pink-600 reveal-top">
                 <MdLocationOn size={24} />
-                Rua Exemplo, 123 - Centro, Cidade/UF
+                Rua Manoel Pereira de Souza, 101, Jardim Los Angeles
               </div>
             </div>
           </div>
