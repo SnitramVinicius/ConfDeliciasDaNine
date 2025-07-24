@@ -11,33 +11,34 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Preloader from "@/components/Preloader";
 
 export default function Home() {
-   const [mostrarCardapio, setMostrarCardapio] = useState(false);
-  const [blurAtivo, setBlurAtivo] = useState(false);
+  const [mostrarCardapio, setMostrarCardapio] = useState(false);
+  // Removi blurAtivo, pois não está sendo usado
+  // const [blurAtivo, setBlurAtivo] = useState(false);
 
   const handleOpenMenu = () => {
     setMostrarCardapio(true);
-    setBlurAtivo(true);
+    // setBlurAtivo(true);
   };
 
   const handleCloseMenu = () => {
     setMostrarCardapio(false);
     setTimeout(() => {
-      setBlurAtivo(false);
+      // setBlurAtivo(false);
       window.scrollTo(window.scrollX, window.scrollY + 1);
-    }, 300); 
+    }, 300);
   };
 
   useEffect(() => {
-  const html = document.documentElement;
-  if (mostrarCardapio) {
-    html.classList.add("no-scroll");
-  } else {
-    html.classList.remove("no-scroll");
-  }
-  return () => {
-    html.classList.remove("no-scroll");
-  };
-}, [mostrarCardapio]);
+    const html = document.documentElement;
+    if (mostrarCardapio) {
+      html.classList.add("no-scroll");
+    } else {
+      html.classList.remove("no-scroll");
+    }
+    return () => {
+      html.classList.remove("no-scroll");
+    };
+  }, [mostrarCardapio]);
 
   return (
     <>
@@ -57,7 +58,7 @@ export default function Home() {
             Seu navegador não suporta vídeo.
           </video>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text- text-3xl md:text-5xl font-bold mb-10 text-white drop-shadow-lg">
+            <h1 className="text-3xl md:text-5xl font-bold mb-10 text-white drop-shadow-lg">
               Cada doce é um pedaço de cuidado,
               <br />
               feito pra emocionar
@@ -110,7 +111,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center text-center flex-1">
                 <img src="/bolovitrine1.jpg" alt="Bombom" className="w-60 h-60 object-cover mb-4 rounded-2xl shadow-md reveal-bottom" />
-                <h2 className="text-2xl text-[#7a5641] font-medium reveal-bottom reveal-bottom">Bolo Vitrine</h2>
+                <h2 className="text-2xl text-[#7a5641] font-medium reveal-bottom">Bolo Vitrine</h2>
               </div>
             </div>
 
@@ -148,7 +149,7 @@ export default function Home() {
 
         <section
           id="contato"
-          className="bg-[#faf0e8] w-full min-h-100 flex flex-col items-center justify-center px-4 py-8"
+          className="bg-[#faf0e8] w-full min-h-[100px] flex flex-col items-center justify-center px-4 py-8"
         >
           <div className="w-full max-w-5xl flex flex-col md:flex-row-reverse gap-10 md:items-center justify-center mx-auto">
             <img
