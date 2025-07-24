@@ -12,7 +12,6 @@ function Carousel({ images, reverse = false }: CarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Importa ScrollReveal somente no client
     if (typeof window !== "undefined") {
       import("scrollreveal").then(({ default: ScrollReveal }) => {
         ScrollReveal().reveal(".reveal-top", {
