@@ -34,8 +34,11 @@ export default function Cardapio() {
                 height={24}
                 className="inline-block"
               />
-              Bolo de Aniversário
+              Bolo de Aniversário e Vitrine
             </h1>
+             <p className="text-xl font mb-5">
+              Monte o seu bolo como preferir!
+            </p>
             <p className="text-xl font mb-2">
               Abacaxi com Coco - <strong>R$ 75,00 kg</strong>
             </p>
@@ -69,11 +72,21 @@ export default function Cardapio() {
             <p className="text-xl font mb-2">
               4 Leites com Morango - <strong>R$ 85,00 kg</strong>
             </p>
+             <p className="text-xl font mb-2">
+              <strong>Obs:</strong><br/>A decoração é feita conforme sua ideia ou imagem de referência.<br/> Viu um bolo que gostou? É só mandar pra gente!
+            </p>
           </div>
           <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md mb-2">
-            <p className="text-xl font-semibold mb-2 text-center">
-              Adicionais p/ bolos:
-            </p>
+           <h1 className="text-xl font-semibold flex items-center justify-center gap-2 mb-5">
+              <Image
+                src="/icons8-adicionar-48.png"
+                alt="Ícone de Bolo"
+                width={24}
+                height={24}
+                className="inline-block"
+              />
+              Adicionais p/ Bolo
+            </h1>
             <p className="text-xl">
               Glitter <strong>R$ 15,00</strong> por <strong>kg</strong>
             </p>
@@ -181,16 +194,16 @@ export default function Cardapio() {
               Brigadeiro - <strong>R$ 10,00 un</strong>
             </p>
             <p className="text-xl mb-2">
-              Ninho e brigadeiro - <strong>R$ 10,00 un</strong>
+              Ninho e Brigadeiro - <strong>R$ 10,00 un</strong>
             </p>
             <p className="text-xl font mb-2">
-              Ninho e morango - <strong>R$ 10,00 un</strong>
+              Ninho e Morango - <strong>R$ 10,00 un</strong>
             </p>
             <p className="text-xl font mb-2">
-              Ninho e beijinho - <strong>R$ 10,00 un</strong>
+              Ninho e Beijinho - <strong>R$ 10,00 un</strong>
             </p>
             <p className="text-xl mb-2">
-              Abacaxi com coco - <strong>R$ 10,00 un</strong>
+              Abacaxi com Coco - <strong>R$ 10,00 un</strong>
             </p>
           </div>
 
@@ -215,11 +228,11 @@ export default function Cardapio() {
               Leite Ninho - <strong>R$ 10,00 un</strong>
             </p>
             <p className="text-xl font mb-2">
-              Ferrero Rocher - <strong>R$ 10,00 un</strong>
+              Tipo Ferrero Rocher - <strong>R$ 10,00 un</strong>
             </p>
           </div>
 
-          <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md mb-15">
+          <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md">
             <h1 className="text-xl font-semibold flex items-center justify-center gap-2 mb-5">
               <Image
                 src="/icons8-bolo-48.png"
@@ -238,6 +251,25 @@ export default function Cardapio() {
             </p>
             <p className="text-xl font mb-2">
               Brigadeiro - <strong>R$ 17,00 un</strong>
+            </p>
+          </div>
+
+          <div className="border-2 border-[#ffe7e7] p-4 rounded-xl shadow-md mb-15">
+            <h1 className="text-xl font-semibold flex items-center justify-center gap-2 mb-5">
+              <Image
+                src="/icons8-bolo-48.png"
+                alt="Ícone de Bolo"
+                width={24}
+                height={24}
+                className="inline-block"
+              />
+              Mini Pudim
+            </h1>
+            <p className="text-xl font mb-2">
+              Leite Condensado  - <strong>R$ 12,00 un</strong>
+            </p>
+            <p className="text-xl font mb-2">
+              Coco - <strong>R$ 12,00 un</strong>
             </p>
           </div>
         </div>

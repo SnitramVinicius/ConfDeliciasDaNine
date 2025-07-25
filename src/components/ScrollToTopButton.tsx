@@ -4,10 +4,9 @@ import { useState, useEffect } from "react";
 
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
-  const [isPreloading, setIsPreloading] = useState(true); // 👈 novo estado
+  const [isPreloading, setIsPreloading] = useState(true); 
 
   useEffect(() => {
-    // Aguarda o mesmo tempo do preloader (3s)
     const timeout = setTimeout(() => {
       setIsPreloading(false);
     }, 3000);
@@ -35,7 +34,7 @@ export default function ScrollToTopButton() {
     });
   };
 
-  if (isPreloading) return null; // 👈 Não renderiza nada durante o preloader
+  if (isPreloading) return null; 
 
   return (
     <div className="fixed bottom-6 right-6 flex flex-col items-end gap-4 z-50">
@@ -51,10 +50,10 @@ export default function ScrollToTopButton() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-16 right-4 p-3 transition z-100"
+          className="fixed bottom-16 right-3 p-3 transition z-100"
           aria-label="Voltar ao topo"
         >
-          <img src="/up.png" alt="Voltar ao topo" className="w-9 h-9 cursor-pointer" />
+          <img src="/up.png" alt="Voltar ao topo" className="w-10 h-10 cursor-pointer" />
         </button>
       )}
     </div>
