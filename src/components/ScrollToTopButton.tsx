@@ -39,7 +39,7 @@ export default function ScrollToTopButton() {
   return (
     <div className="fixed bottom-6 right-6 flex flex-col items-end gap-4 z-50">
       <a
-       href="https://api.whatsapp.com/send?phone=67991015654"
+       href="https://api.whatsapp.com/send?phone=5567991015654&text=Oi%20Nine!%20Quero%20fazer%20um%20pedido%20%F0%9F%8D%B0"
         target="_blank"
         rel="noopener noreferrer"
         className="pulse-whatsapp"
