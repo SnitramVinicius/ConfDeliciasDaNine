@@ -172,10 +172,10 @@ export default function Home() {
                 (67) 99101-5654
               </a>
 
-              <div className="flex items-center gap-2 text-pink-600">
+              {/* <div className="flex items-center gap-2 text-pink-600">
                 <MdLocationOn size={24} />
                 Rua Manoel Pereira de Souza, 101, Jardim Los Angeles
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
