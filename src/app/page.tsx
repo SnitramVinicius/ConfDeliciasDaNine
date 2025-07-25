@@ -12,7 +12,7 @@ import Preloader from "@/components/Preloader";
 
 export default function Home() {
   const [mostrarCardapio, setMostrarCardapio] = useState(false);
-  const [blurAtivo, setBlurAtivo] = useState(false);
+  const [, setBlurAtivo] = useState(false);
 
   const handleCloseMenu = () => {
     setMostrarCardapio(false);
