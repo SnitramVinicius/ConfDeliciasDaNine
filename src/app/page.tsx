@@ -1,6 +1,5 @@
 "use client";
 
-import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
