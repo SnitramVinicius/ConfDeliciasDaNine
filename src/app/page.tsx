@@ -1,9 +1,9 @@
 "use client";
 
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { MdLocationOn } from "react-icons/md";
 import { useState, useEffect } from "react";
 import Cardapio from "@/components/cardapio";
 import CarrosselDuplo from "@/components/Carrossel";
