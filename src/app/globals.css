@@ -9,15 +9,27 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #faf0e8; /* <--- Alterado de #0a0a0a para o fundo do seu site */
+    --background: #faf0e8;
     --foreground: #ededed;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif, 'Inter';
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -31,13 +43,4 @@ body {
 .no-scroll {
   overflow: hidden !important;
   height: 100%;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  outline: 1px solid red;
 }
