@@ -6,18 +6,23 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Impede scroll no body quando o menu estiver aberto
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
+useEffect(() => {
+  const html = document.documentElement;
+  const body = document.body;
 
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, [menuOpen]);
+  if (menuOpen) {
+    html.classList.add("no-scroll");
+    body.classList.add("no-scroll");
+  } else {
+    html.classList.remove("no-scroll");
+    body.classList.remove("no-scroll");
+  }
+
+  return () => {
+    html.classList.remove("no-scroll");
+    body.classList.remove("no-scroll");
+  };
+}, [menuOpen]);
 
   return (
     <>

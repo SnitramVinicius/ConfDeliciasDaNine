@@ -38,7 +38,7 @@ export default function Home() {
       <Preloader />
       <ScrollToTopButton />
       <div className={mostrarCardapio ? "blur-sm pointer-events-none select-none" : ""}>
-        <main className="relative w-full h-screen overflow-hidden">
+        <main className="relative w-full min-h-screen overflow-hidden">
           <Navbar />
           <video
             autoPlay
