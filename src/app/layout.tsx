@@ -9,7 +9,7 @@ const inter = Inter({
   weight: ['400', '500', '700'],
 });
 
-// ✅ Exportação correta do metadata
+
 export const metadata = {
   title: 'Delícias da Nine',
   description: 'Doces feitos com amor!',
@@ -25,7 +25,7 @@ export const metadata = {
   },
 };
 
-// ✅ Exportar themeColor pelo viewport (conforme recomendação do Next.js)
+
 export const viewport = {
   themeColor: '#ffffff',
 };
